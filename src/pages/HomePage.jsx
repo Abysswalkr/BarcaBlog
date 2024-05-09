@@ -5,10 +5,9 @@ import { supabase } from '../api/supabaseClient';
 
 
 const navigation = [
-  { name: 'Product', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'Marketplace', href: '#' },
-  { name: 'Company', href: '#' },
+  { name: 'Historia', href: '#' },
+  { name: 'Noticias', href: '#' },
+  { name: 'Imágenes', href: '#' },
 ];
 
 export default function CombinedComponent() {
@@ -97,15 +96,14 @@ export default function CombinedComponent() {
 
     return (
       <div className="bg-white">
-        {/* Aquí comienza el primer componente */}
         <header className="absolute inset-x-0 top-0 z-50">
         <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
             <div className="flex lg:flex-1">
               <a href="#" className="-m-1.5 p-1.5">
-                <span className="sr-only">Your Company</span>
+                <span className="sr-only">FC Barcelona Blog</span>
                 <img
                   className="h-8 w-auto"
-                  src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                  src="https://th.bing.com/th/id/R.ca241a74a254968f55fbc5c04a70553a?rik=lmusZOKysXiM9w&riu=http%3a%2f%2fwww.fotolip.com%2fwp-content%2fuploads%2f2016%2f05%2fBarcelona-Logo-4.jpg&ehk=LqlkGnjrm5OxIo9fkzFhL15zJwBKOG64aubj4gJLaD8%3d&risl=&pid=ImgRaw&r=0"
                   alt=""
                 />
               </a>
@@ -129,7 +127,7 @@ export default function CombinedComponent() {
             </div>
             <div className="hidden lg:flex lg:flex-1 lg:justify-end">
               <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-                Log in <span aria-hidden="true">&rarr;</span>
+                Iniciar sesión <span aria-hidden="true">&rarr;</span>
               </a>
             </div>
           </nav>
@@ -138,10 +136,10 @@ export default function CombinedComponent() {
             <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
               <div className="flex items-center justify-between">
                 <a href="#" className="-m-1.5 p-1.5">
-                  <span className="sr-only">Your Company</span>
+                  <span className="sr-only">FC Barcelona Blog</span>
                   <img
                     className="h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                    src="https://th.bing.com/th/id/R.ca241a74a254968f55fbc5c04a70553a?rik=lmusZOKysXiM9w&riu=http%3a%2f%2fwww.fotolip.com%2fwp-content%2fuploads%2f2016%2f05%2fBarcelona-Logo-4.jpg&ehk=LqlkGnjrm5OxIo9fkzFhL15zJwBKOG64aubj4gJLaD8%3d&risl=&pid=ImgRaw&r=0"
                     alt=""
                   />
                 </a>
@@ -213,7 +211,7 @@ export default function CombinedComponent() {
               aria-hidden="true"
             >
               <div
-                className="aspect-[801/1036] w-[50.0625rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30"
+                className="aspect-[801/1036] w-[50.0625rem] bg-gradient-to-tr from-[#ff80b5] to-[#0c4a6e] opacity-30"
                 style={{
                   clipPath:
                     'polygon(63.1% 29.5%, 100% 17.1%, 76.6% 3%, 48.4% 0%, 44.6% 4.7%, 54.5% 25.3%, 59.8% 49%, 55.2% 57.8%, 44.4% 57.2%, 27.8% 47.9%, 35.1% 81.5%, 0% 97.7%, 39.2% 100%, 35.2% 81.4%, 97.2% 52.8%, 63.1% 29.5%)',
@@ -225,22 +223,17 @@ export default function CombinedComponent() {
                 <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
                   <div className="relative w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
                     <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                      We’re changing the way people connect.
+                      Las últimas noticias del futbol Blaugrana.
                     </h1>
                     <p className="mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
-                      Cupidatat minim id magna ipsum sint dolor qui. Sunt sit in quis cupidatat mollit aute velit. Et
-                      labore commodo nulla aliqua proident mollit ullamco exercitation tempor. Sint aliqua anim nulla sunt
-                      mollit id pariatur in voluptate cillum.
+                      Es más que un club de fútbol; es una identidad cultural y un símbolo de orgullo catalán. Fundado en 1899 por un grupo de jugadores suizos, ingleses y catalanes liderados por Joan Gamper, el club ha crecido hasta convertirse en una de las instituciones deportivas más reconocidas y laureadas del mundo.
                     </p>
                     <div className="mt-10 flex items-center gap-x-6">
                       <a
                         href="#"
                         className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                       >
-                        Agregar
-                      </a>
-                      <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-                        Live demo <span aria-hidden="true">→</span>
+                        Crear cuenta
                       </a>
                     </div>
                   </div>
@@ -248,7 +241,7 @@ export default function CombinedComponent() {
                     <div className="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80">
                       <div className="relative">
                         <img
-                          src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
+                          src="https://th.bing.com/th/id/R.b6dced745635a7d1edb5141600811fca?rik=69c6xo8%2btjhHlg&pid=ImgRaw&r=0"
                           alt=""
                           className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                         />
@@ -258,7 +251,7 @@ export default function CombinedComponent() {
                     <div className="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
                       <div className="relative">
                         <img
-                          src="https://images.unsplash.com/photo-1485217988980-11786ced9454?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
+                          src="https://wallpapercave.com/wp/wp3508756.jpg"
                           alt=""
                           className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                         />
@@ -266,7 +259,7 @@ export default function CombinedComponent() {
                       </div>
                       <div className="relative">
                         <img
-                          src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-x=.4&w=396&h=528&q=80"
+                          src="https://th.bing.com/th/id/R.258f7fa24c5594b13aad1afd62f077e9?rik=YtUPQGzTm6Mpcg&riu=http%3a%2f%2f2.bp.blogspot.com%2f-0fAYgKcCJGs%2fUPElEtndgnI%2fAAAAAAAAFk0%2fx4GOonc-qNU%2fs1600%2fFC%2bBarcelona%2bTeam%2bCool%2bHD%2bWallpapers%2b2013_4.jpg&ehk=4C8fVolgWJrIMKt6jAqhNiYiVphBRXfTDFH1cmby%2fFg%3d&risl=&pid=ImgRaw&r=0"
                           alt=""
                           className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                         />
@@ -276,7 +269,7 @@ export default function CombinedComponent() {
                     <div className="w-44 flex-none space-y-8 pt-32 sm:pt-0">
                       <div className="relative">
                         <img
-                          src="https://images.unsplash.com/photo-1670272504528-790c24957dda?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=left&w=400&h=528&q=80"
+                          src="https://th.bing.com/th?id=OIF.GPskA2opErSRMciSk%2febhw&rs=1&pid=ImgDetMain"
                           alt=""
                           className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                         />
@@ -284,7 +277,7 @@ export default function CombinedComponent() {
                       </div>
                       <div className="relative">
                         <img
-                          src="https://images.unsplash.com/photo-1670272505284-8faba1c31f7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
+                          src="https://th.bing.com/th/id/OIP.xnJ0kbUNDkqgyvgEnasHZgHaKC?w=590&h=800&rs=1&pid=ImgDetMain"
                           alt=""
                           className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                         />
@@ -300,13 +293,13 @@ export default function CombinedComponent() {
           <div className="bg-white py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">From the blog</h2>
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Noticias</h2>
             <p className="mt-2 text-lg leading-8 text-gray-600">
-              Learn how to grow your business with our expert advice.
+              Entérate de lo último que sucede alrededor del FC Barcelona
             </p>
             <button
   type="button"
-  onClick={() => setIsModalOpen(true)} // Reuse the existing modal open state or create a new one if needed
+  onClick={() => setIsModalOpen(true)} 
   className="mt-4 rounded-md bg-blue-500 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
 >
   Add Post

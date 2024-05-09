@@ -26,7 +26,7 @@ function classNames(...classes) {
 export default function Navbar() {
   return (
     <Popover as="header" className={({ open }) => classNames(open ? 'fixed inset-0 z-40 overflow-y-auto' : '', 'bg-white shadow-sm lg:static lg:overflow-y-visible')}>
-      {/* Todo el contenido del Popover de tu navbar aquí */}
+
     </Popover>
   );
 }
