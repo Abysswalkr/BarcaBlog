@@ -1,9 +1,11 @@
 import React from 'react';
 import Slider from 'react-slick';
+import { useNavigate } from 'react-router-dom';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
 const NewsSlider = () => {
+  const navigate = useNavigate();  
   // Configuración del slider
   const settings = {
     dots: true,
@@ -31,6 +33,12 @@ const NewsSlider = () => {
           </div>
         ))}
       </Slider>
+      <button
+        onClick={() => navigate('/')}  // Navega hacia HomePage
+        className="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+      >
+        Regresar al Inicio
+      </button>
     </div>
   );
 };
